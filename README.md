@@ -17,14 +17,14 @@ This project is a two-part application combining a web-based dashboard system an
 ### Dashboard
 1. Test Case : Side Menu
 The navigation menu consists of the following sections:
- - Dashboard
+ - Dashboard :
     Redirects to the main dashboard view of the application.
- - Product (Expandable Submenu)
+ - Product (Expandable Submenu) :
     Category: Links to the product category management page.
     Details: Links to the product details management page.
- - Orders
+ - Orders :
      Links to the orders report page.
- - Logout
+ - Logout :
      Logs out the user and redirects to the login page.
 2. Test Case : Page Structure
 The Dashboard page provides a high-level overview of important metrics such as total orders, pending orders, dispatched orders, and delivered orders. It also features a dynamic section for displaying product categories, which is fetched using an AJAX request.
