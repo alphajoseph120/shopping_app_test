@@ -17,7 +17,7 @@ This project is a two-part application combining a web-based dashboard system an
 ### Dashboard
 1. Test Case : Side Menu
 The navigation menu consists of the following sections:
-###### Dashboard
+#### Dashboard
     - Redirects to the main dashboard view of the application.
 ###### Product (Expandable Submenu)
     - Category: Links to the product category management page.
