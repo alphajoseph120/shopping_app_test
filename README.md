@@ -78,11 +78,11 @@ Headers: Accept: application/json
 }
 
 ### 2. Get Product Categories API
-- Endpoint
+- Endpoint :
 GET /api/v1/category
-- Description
+- Description :
 This API retrieves a list of all product categories, including the category name, description, and an image. If no image is found, a default "no-image" is returned. 
-- Request
+- Request :
 Headers:
 Accept: application/json, Authorisation: Bearer your_token
 - body : No parameters are required for this API.
@@ -111,11 +111,11 @@ Accept: application/json, Authorisation: Bearer your_token
 }
 
 ### 3. Get Product Details API
-- Endpoint
+- Endpoint :
 GET /api/v1/product-details
-- Description
+- Description :
 This API retrieves product details, including product name, price, image, and category. It supports filtering by product_name and category_id through query parameters.
-- Request
+- Request :
 Headers:
 Accept: application/json, Authorisation: Bearer your_token
 - body : {
@@ -162,11 +162,11 @@ Accept: application/json, Authorisation: Bearer your_token
 }
 
 ### 4. Add to cart API 
-- Endpoint
+- Endpoint :
 POST /api/v1/add-to-cart
-- Description
+- Description :
 This API adds a product to the user's cart or updates the quantity and total price if the product already exists in the cart.
-- Request
+- Request :
 Headers:
 Accept: application/json, Authorisation: Bearer your_token
 - body : {
@@ -212,11 +212,11 @@ Accept: application/json, Authorisation: Bearer your_token
 }
 
 ### 5. Place Order API
-- Endpoint
+- Endpoint :
 POST /api/v1/place-order
-- Description
+- Description :
 This API allows a user to place an order for all the items in their cart. The order includes a summary of the purchased products and the total amount.
-- Request
+- Request :
 Headers:
 Accept: application/json, Authorisation: Bearer your_token
 - body : {
@@ -252,11 +252,11 @@ Accept: application/json, Authorisation: Bearer your_token
 }
 
 ### 6. Logout API
-- Endpoint
+- Endpoint :
 POST /api/v1/logout
--Description
+- Description :
 This API logs out the currently authenticated user by revoking all active tokens.
-- Request
+- Request :
 Headers:
 Authorisation: Bearer your_token
 - body : No parameters are required for this API.
