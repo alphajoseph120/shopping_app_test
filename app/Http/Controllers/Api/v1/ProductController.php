@@ -9,9 +9,12 @@ use App\Models\ProductDetails;
 
 class ProductController extends Controller
 {
-    public function index(){
-        
-        $categories = ProductCategory::select('id','category_name')->get();
+    public function index(){  
+        $categories = ProductCategory::select('id','category_name','description','cate_image')->get();
+        $categories->transform(function ($category) {
+            $category->cate_image = $category->cate_image ? asset('images/product/' . $category->cate_image) : asset('images/no-image.jpeg');
+            return $category;
+        });
 
         if($categories){
             return response()->json([

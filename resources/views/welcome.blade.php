@@ -63,36 +63,6 @@
     <script src="{{asset('js/quixnav-init.js')}}"></script>
     <script src="{{asset('js/custom.min.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <script>
-        document.getElementById('loginButton').addEventListener('click', function() {
-            let formData = {
-                email   : $('#email').val(),
-                password: $('#password').val(),
-                _token  : '{{ csrf_token() }}'
-            };
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: "{{ url('login') }}",
-                data: formData,
-                success: function(response) {
-                    console.log('login',response);
-                    if (response.success) {
-                        toastr.success('Login Success');
-                        window.location.href = response.redirect_url;
-                    } else {
-                        toastr.error('Login Failed');
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error('Error:', error);
-                    alert('An error occurred while processing your request.');
-                }
-            });
-        });
-
-    </script>
 </body>
 
 </html>
